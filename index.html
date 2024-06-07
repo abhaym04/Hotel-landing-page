@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <script src="https://kit.fontawesome.com/f8e10d0069.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1 >Welcome to Paradise Hotel</h1>
+            <p style="font-family: 25px; margin:10px;">We provide rooms at great prices along with great amenities to
+                make your living experience awesome </p>
+            <button class="book-button">Book</button>
+        </div>
+    </section>
+
+    <h1 class="heading">About us</h1>
+    <section class="about-section">
+        <div class="about-us">
+            <p>Welcome to Paradise Hotel, where luxury meets serenity in a tropical haven. Our elegantly appointed rooms
+                and suites offer stunning views, plush bedding, and modern conveniences. With lush gardens, pristine
+                pools, and private beach access, relaxation is always within reach.</p><br>
+            <p>At Paradise Hotel, we create memorable moments for every guest. Enjoy gourmet cuisine, rejuvenate at our
+                spa, and explore local culture with our curated excursions. Our attentive staff ensures your stay is a
+                cherished experience.</p>
+            <button class="know-button">Know more...</button>
+        </div>
+        <div class="amenities">
+            <h3>Amenities We Have:</h3>
+            <ul>
+                <li><i class="fa-solid fa-wifi"></i>High Speed Internet</li>
+                <li><i class="fa-solid fa-utensils"></i>Complementary Breakfast</li>
+                <li><i class="fa-solid fa-dumbbell"></i>Gym</li>
+                <li><i class="fa-solid fa-mug-saucer"></i>Cafeteria</li>
+                <li><i class="fa-solid fa-water-ladder"></i>Swimming Pool</li>
+            </ul>
+        </div>
+
+    </section>
+    <h1 class="room-heading">Room Types</h1>
+    <section class="room-type-container">
+        <div class="room-images"><img src="room1.jpeg" alt="room"></div>
+        <div class="room-list">
+            <h4>Single Occupancy Room</h4>
+            <p>
+                Cozy and efficient, this room features a comfortable single bed, modern amenities, and a sleek en-suite
+                bathroom.</p>
+            <h4>Family Room</h4>
+            <p>
+                Spacious and welcoming, this room includes two queen beds, a sitting area, and kid-friendly amenities
+                for a perfect family stay.</p>
+            <h4>Duplex Room</h4>
+            <p>
+                Spread over two levels, this stylish duplex features a living area downstairs and a cozy bedroom
+                upstairs, offering plenty of space and privacy.</p>
+        </div>
+    </section>
+    <button class="help-button">
+        <h4>Need Help?</h4>
+    </button>
+    <h2 class="form-heading">Fill the form for booking room</h2>
+    <section class="form-container">
+        <form >
+            <div class="form-group">
+                <label for="name">Your Full Name</label><br>
+                <input type="text" id="name" required >
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="booking-date">Booking Date</label><br>
+                <input type="date" id="booking-date" required>
+            </div>
+            <div class="form-group">
+                <label for="room-type">Room Type</label><br>
+                <select name="room-type" id="room-type">
+                    <option value="" selected disabled>Select..</option>
+                    <option value="Single Room" required>Single Room</option>
+                    <option value="Family Room" required>Family Room</option>
+                    <option value="Duplex Room" required>Duplex Room</option>
+                </select>
+            </div>
+            <input type="submit" value="book">
+        </form>
+    </section>
+
+</body>
+
+</html>
